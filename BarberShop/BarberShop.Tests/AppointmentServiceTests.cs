@@ -90,5 +90,41 @@ namespace BarberShop.Tests
             // Assert
             Assert.False(result);
         }
+
+        [Fact]
+        public void CreateAppointment_ShouldReturnFalse_WhenTimeIsNot_30MinutesInverval()
+        {
+            var tomorrow = DateTime.Now.AddDays(1);
+            var invalidDate = new DateTime(tomorrow.Year, tomorrow.Month, tomorrow.Day, 16, 15, 0);
+
+            var appointment = new Appointment
+            {
+                CustomerName = "Alice",
+                BarberName = "Jack",
+                AppointmentDate = invalidDate,
+            };
+
+            // Act
+            var result = _service.CreateAppointment(appointment);
+
+            // Assert
+            Assert.False(result);
+        }
+
+        [Fact]
+        public void CancelAppointment_ShouldReturnFalse_WhenDateIsPast()
+        {
+            // Arrange
+            var pastDate = DateTime.Now.AddDays(-1);
+            var appointment = new Appointment { Id = 1, AppointmentDate = pastDate };
+
+            _mockRepo.Setup(r => r.GetById(1)).Returns(appointment);
+
+            // Act
+            var result = _service.CancelAppointment(-1);
+
+            // Assert
+            Assert.False(result);
+        }
     }
 }

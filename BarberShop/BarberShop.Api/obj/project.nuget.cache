@@ -1,8 +1,29 @@
 {
   "version": 2,
-  "dgSpecHash": "oaX9PK9f+NA4KXpK+0GD/AVb1SBA3TQzR2cHebnDJOZj7R/kkuznwT8NhFnoEPPJZ8249hbEqcj/pV5aCGYVeA==",
+  "dgSpecHash": "Y0NtwsniQ4ajH9x+DutSJQP1bcJJRwGjwkwOiIZEamMBcbGPDs9O9bNpcjluR4PxwWI8KgnbRczS94lbfvQ4xQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Api\\BarberShop.Api.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.36\\microsoft.entityframeworkcore.6.0.36.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.36\\microsoft.entityframeworkcore.abstractions.6.0.36.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.36\\microsoft.entityframeworkcore.analyzers.6.0.36.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.36\\microsoft.entityframeworkcore.inmemory.6.0.36.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.1\\microsoft.extensions.caching.abstractions.6.0.1.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.3\\microsoft.extensions.caching.memory.6.0.3.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.2\\microsoft.extensions.dependencyinjection.6.0.2.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.extensions.logging\\6.0.1\\microsoft.extensions.logging.6.0.1.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.extensions.options\\6.0.1\\microsoft.extensions.options.6.0.1.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.1\\microsoft.extensions.primitives.6.0.1.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\swashbuckle.aspnetcore\\6.0.0\\swashbuckle.aspnetcore.6.0.0.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.0.0\\swashbuckle.aspnetcore.swagger.6.0.0.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.0.0\\swashbuckle.aspnetcore.swaggergen.6.0.0.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.0.0\\swashbuckle.aspnetcore.swaggerui.6.0.0.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\system.collections.immutable\\6.0.1\\system.collections.immutable.6.0.1.nupkg.sha512",
+    "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.2\\system.diagnostics.diagnosticsource.6.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

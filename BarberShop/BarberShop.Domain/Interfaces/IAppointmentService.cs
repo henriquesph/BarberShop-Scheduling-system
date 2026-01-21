@@ -5,5 +5,7 @@ namespace BarberShop.Domain.Interfaces
     public interface IAppointmentService
     {
         bool CreateAppointment(Appointment appointment);
+        IEnumerable<Appointment> GetAllAppointments();
+        bool CancelAppointment(int id);
     }
 }

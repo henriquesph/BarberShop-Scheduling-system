@@ -13,7 +13,6 @@ C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop\BarberShop\Barb
 C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop-Scheduling-system\BarberShop\BarberShop.Domain\bin\Debug\net6.0\BarberShop.Domain.deps.json
 C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop-Scheduling-system\BarberShop\BarberShop.Domain\bin\Debug\net6.0\BarberShop.Domain.dll
 C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop-Scheduling-system\BarberShop\BarberShop.Domain\bin\Debug\net6.0\BarberShop.Domain.pdb
-C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop-Scheduling-system\BarberShop\BarberShop.Domain\obj\Debug\net6.0\BarberShop.Domain.csproj.AssemblyReference.cache
 C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop-Scheduling-system\BarberShop\BarberShop.Domain\obj\Debug\net6.0\BarberShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop-Scheduling-system\BarberShop\BarberShop.Domain\obj\Debug\net6.0\BarberShop.Domain.AssemblyInfoInputs.cache
 C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop-Scheduling-system\BarberShop\BarberShop.Domain\obj\Debug\net6.0\BarberShop.Domain.AssemblyInfo.cs
@@ -22,3 +21,4 @@ C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop-Scheduling-syst
 C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop-Scheduling-system\BarberShop\BarberShop.Domain\obj\Debug\net6.0\refint\BarberShop.Domain.dll
 C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop-Scheduling-system\BarberShop\BarberShop.Domain\obj\Debug\net6.0\BarberShop.Domain.pdb
 C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop-Scheduling-system\BarberShop\BarberShop.Domain\obj\Debug\net6.0\ref\BarberShop.Domain.dll
+C:\Users\hpereir.RADHA\Documents\Repositorio Henrique\BarberShop-Scheduling-system\BarberShop\BarberShop.Domain\obj\Debug\net6.0\BarberShop.Domain.csproj.AssemblyReference.cache

@@ -12,5 +12,6 @@ namespace BarberShop.Domain.Entities
         public string CustomerName { get; set; } = string.Empty;
         public string BarberName { get; set; } = string.Empty;
         public DateTime AppointmentDate { get; set; }
+        public bool IsCanceled { get; set; } = false;
     }
 }
