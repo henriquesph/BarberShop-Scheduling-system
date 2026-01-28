@@ -126,5 +126,22 @@ namespace BarberShop.Tests
             // Assert
             Assert.False(result);
         }
+
+
+        [Fact]
+        public void CancelAppointment_ShouldReturnFalse_WhenNoticeIsLessTwoHours()
+        {
+            // Arrange: Appointment is 1 hour from now
+            var tightSchedule = DateTime.Now.AddHours(1);
+            var appointment = new Appointment { Id = 1, AppointmentDate = tightSchedule };
+
+            _mockRepo.Setup(r => r.GetById(1)).Returns(appointment);
+
+            // Act
+            var result = _service.CancelAppointment(1);
+
+            //Assert
+            Assert.False(result);
+        }
     }
 }

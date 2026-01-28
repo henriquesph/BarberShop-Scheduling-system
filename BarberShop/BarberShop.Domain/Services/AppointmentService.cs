@@ -43,12 +43,19 @@ namespace BarberShop.Domain.Services
         {
             var appointment = _repository.GetById(id);
 
-            if (appointment == null) return false;
+            if (appointment == null)
+                return false;
 
-            if(appointment.AppointmentDate < DateTime.Now) return false;
+            if (appointment.AppointmentDate < DateTime.Now)
+                return false;
+
+            TimeSpan timeUntilAppointment = appointment.AppointmentDate - DateTime.Now;
+            if (timeUntilAppointment.TotalHours < 2)
+            {
+                return false;
+            }
 
             appointment.IsCanceled = true;
-
             _repository.Update(appointment);
             return true;
         }

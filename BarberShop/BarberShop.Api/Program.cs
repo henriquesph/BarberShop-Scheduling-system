@@ -24,6 +24,15 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// 1. Define the Policy
+builder.Services.AddCors(options => {
+    options.AddPolicy("AllowReactApp",
+        policy => policy.WithOrigins("http://localhost:3000") // React's address
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+});
+
+
 // 1. Add the Database (In-Memory)
 builder.Services.AddDbContext<BarberDbContext>(options =>
     options.UseInMemoryDatabase("BarberShopDb"));
@@ -45,6 +54,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("AllowReactApp");
 
 app.UseAuthorization();
 app.MapControllers();
