@@ -9,7 +9,33 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarberShop.Tests", "BarberS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarberShop.Api", "BarberShop.Api\BarberShop.Api.csproj", "{3C6C90DA-F31B-4D6F-A315-B1331F614980}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberShop.Infrastructure", "BarberShop.Infrastructure\BarberShop.Infrastructure.csproj", "{D23E8220-8CEC-42A5-922F-E2AA26F83D11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarberShop.Infrastructure", "BarberShop.Infrastructure\BarberShop.Infrastructure.csproj", "{D23E8220-8CEC-42A5-922F-E2AA26F83D11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8701B873-4A12-4581-81CC-6F12718F7E2A}"
+	ProjectSection(SolutionItems) = preProject
+		barbershop-web\package.json = barbershop-web\package.json
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "barbershop-web", "barbershop-web\", "{7E51D9C8-A3A7-4691-870F-9A8DBE59B816}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62642"
+		Debug.AspNetCompiler.PhysicalPath = "barbershop-web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62642\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62642"
+		Release.AspNetCompiler.PhysicalPath = "barbershop-web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62642\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62642"
+		SlnRelativePath = "barbershop-web\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +59,10 @@ Global
 		{D23E8220-8CEC-42A5-922F-E2AA26F83D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D23E8220-8CEC-42A5-922F-E2AA26F83D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D23E8220-8CEC-42A5-922F-E2AA26F83D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E51D9C8-A3A7-4691-870F-9A8DBE59B816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E51D9C8-A3A7-4691-870F-9A8DBE59B816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E51D9C8-A3A7-4691-870F-9A8DBE59B816}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E51D9C8-A3A7-4691-870F-9A8DBE59B816}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

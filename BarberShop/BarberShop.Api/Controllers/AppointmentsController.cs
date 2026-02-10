@@ -35,7 +35,7 @@ public class AppointmentsController : ControllerBase
         return Ok(appointments);
     }
 
-    [HttpPut("{id}cancel")]
+    [HttpPut("{id}/cancel")]
     public IActionResult Cancel(int id)
     {
         var success = _service.CancelAppointment(id);

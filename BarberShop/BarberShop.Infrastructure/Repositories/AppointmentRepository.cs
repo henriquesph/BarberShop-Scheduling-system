@@ -20,7 +20,7 @@ namespace BarberShop.Infrastructure.Repositories
 
         public Appointment? GetById(int id)
         {
-            return _context.Appointments.Find();
+            return _context.Appointments.Find(id);
         }
 
         public bool IsSlotTaken(DateTime date, string barberName)
