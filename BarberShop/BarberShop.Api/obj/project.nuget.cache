@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y0NtwsniQ4ajH9x+DutSJQP1bcJJRwGjwkwOiIZEamMBcbGPDs9O9bNpcjluR4PxwWI8KgnbRczS94lbfvQ4xQ==",
+  "dgSpecHash": "GsK3NlGtautHudV6YVHbygCOSWbAAfB7beIh+I2HDw2Vbr4nhqldwxfdoEZfIp0BRConvvzY0lj7Xv9gFfocDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Api\\BarberShop.Api.csproj",
+  "projectFilePath": "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Api\\BarberShop.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.36\\microsoft.entityframeworkcore.6.0.36.nupkg.sha512",
     "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.36\\microsoft.entityframeworkcore.abstractions.6.0.36.nupkg.sha512",

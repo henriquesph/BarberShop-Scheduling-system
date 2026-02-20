@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y3rlH5yeE2M+WP0yUbgD8I6kUvZvJcocUtd6FEREFJ05OhWzan+RV9Y0MzR2jIq++N30JgIu8R7x5JPMOQi1ZA==",
+  "dgSpecHash": "i5hcTcb7Fv1vs8fIuVISW63vSo8mT2yEfp36fnJMEHnM8Fxy0BF/A4bOoTj90MJt4dXuGJIwzv/AL2mWN569PQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Infrastructure\\BarberShop.Infrastructure.csproj",
+  "projectFilePath": "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Infrastructure\\BarberShop.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.36\\microsoft.entityframeworkcore.6.0.36.nupkg.sha512",

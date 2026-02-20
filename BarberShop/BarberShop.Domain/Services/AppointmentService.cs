@@ -15,6 +15,7 @@ namespace BarberShop.Domain.Services
         public bool CreateAppointment(Appointment appointment)
         {
             if (!IsValidData(appointment)) return false;
+            //if (!IsUpToAMonth(appointment)) return false;
             if (!IsWithinBusinessHours(appointment.AppointmentDate)) return false;
             if (!IsOnThirtyMinuteInterval(appointment.AppointmentDate)) return false;
 
@@ -25,8 +26,30 @@ namespace BarberShop.Domain.Services
             return true;
         }
 
-        private bool IsValidData(Appointment app) =>
-            app.AppointmentDate >= DateTime.Now && !string.IsNullOrWhiteSpace(app.CustomerName);
+        //private bool IsValidData(Appointment app) =>
+        //    app.AppointmentDate >= DateTime.Now && !string.IsNullOrWhiteSpace(app.CustomerName);
+
+        //private bool IsValidData(Appointment app) =>
+        //    app.AppointmentDate >= DateTime.Now &&
+        //    app.AppointmentDate <= DateTime.Now.AddDays(30) &&
+        //    !string.IsNullOrWhiteSpace(app.CustomerName);
+
+        //private bool IsUpToAMonth(Appointment app) =>
+        //    app.AppointmentDate <= DateTime.Now.AddDays(30);
+
+        //private bool IsValidData(Appointment app, DateTime now) =>
+        //    app.AppointmentDate >= now &&
+        //    app.AppointmentDate <= now.AddDays(30) &&
+        //    !string.IsNullOrWhiteSpace(app.CustomerName);
+
+        private bool IsValidData(Appointment app)
+        {
+            var now = DateTime.Now;
+
+            return app.AppointmentDate >= now &&
+                   app.AppointmentDate <= now.AddDays(30) &&
+                   !string.IsNullOrWhiteSpace(app.CustomerName);
+        }
 
         private bool IsWithinBusinessHours(DateTime date) =>
             date.Hour >= 9 && date.Hour < 18;

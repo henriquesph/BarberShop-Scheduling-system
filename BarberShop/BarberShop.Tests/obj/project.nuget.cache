@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k7IDJC/iNDrOH/m2c+/jzX+MSUmJOtXB5D9BdHJO8Jk643+mZgk2xKsMIcKZJOJmxF6f4aEENdiA1gL36s3cUw==",
+  "dgSpecHash": "uot52HH9Iqiu8K2a8yVbYM9AHJcbmom+Ggg0eUbADyidm8disHiRAbHFiNsLU6dIBQDCFGGYnTCYChoK7ucjGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Tests\\BarberShop.Tests.csproj",
+  "projectFilePath": "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Tests\\BarberShop.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",

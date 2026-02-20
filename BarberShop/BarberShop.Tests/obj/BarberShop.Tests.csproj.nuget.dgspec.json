@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Tests\\BarberShop.Tests.csproj": {}
+    "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Tests\\BarberShop.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Domain\\BarberShop.Domain.csproj": {
+    "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Domain\\BarberShop.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Domain\\BarberShop.Domain.csproj",
+        "projectUniqueName": "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Domain\\BarberShop.Domain.csproj",
         "projectName": "BarberShop.Domain",
-        "projectPath": "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Domain\\BarberShop.Domain.csproj",
+        "projectPath": "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Domain\\BarberShop.Domain.csproj",
         "packagesPath": "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Domain\\obj\\",
+        "outputPath": "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Tests\\BarberShop.Tests.csproj": {
+    "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Tests\\BarberShop.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Tests\\BarberShop.Tests.csproj",
+        "projectUniqueName": "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Tests\\BarberShop.Tests.csproj",
         "projectName": "BarberShop.Tests",
-        "projectPath": "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Tests\\BarberShop.Tests.csproj",
+        "projectPath": "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Tests\\BarberShop.Tests.csproj",
         "packagesPath": "C:\\Users\\hpereir.RADHA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Tests\\obj\\",
+        "outputPath": "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Domain\\BarberShop.Domain.csproj": {
-                "projectPath": "C:\\Users\\hpereir.RADHA\\Documents\\Repositorio Henrique\\BarberShop-Scheduling-system\\BarberShop\\BarberShop.Domain\\BarberShop.Domain.csproj"
+              "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Domain\\BarberShop.Domain.csproj": {
+                "projectPath": "D:\\Repositorios - Henrique\\BarberShop\\BarberShop\\BarberShop.Domain\\BarberShop.Domain.csproj"
               }
             }
           }
