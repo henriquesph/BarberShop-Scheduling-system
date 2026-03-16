@@ -44,4 +44,16 @@ public class AppointmentsController : ControllerBase
 
         return Ok();
     }
+
+    [HttpGet("available-slots")]
+    public IActionResult GetAvailableSlots([FromQuery] DateTime date)
+    {
+        if (date == default)
+        {
+            return BadRequest("A valid date must be provided.");
+        }
+
+        var slots = _service.GetAvailableSlots(date);
+        return Ok(slots);
+    }
 }

@@ -7,5 +7,6 @@ namespace BarberShop.Domain.Interfaces
         bool CreateAppointment(Appointment appointment);
         IEnumerable<Appointment> GetAllAppointments();
         bool CancelAppointment(int id);
+        List<DateTime> GetAvailableSlots(DateTime date);
     }
 }
