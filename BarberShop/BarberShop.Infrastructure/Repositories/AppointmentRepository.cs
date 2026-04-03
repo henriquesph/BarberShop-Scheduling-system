@@ -23,13 +23,6 @@ namespace BarberShop.Infrastructure.Repositories
             return _context.Appointments.Find(id);
         }
 
-        public bool IsSlotTaken(DateTime date, string barberName)
-        {
-            return _context.Appointments.Any(a =>
-            a.AppointmentDate == date &&
-            a.BarberName == barberName);
-        }
-
         public void Save(Appointment appointment)
         {
             _context.Appointments.Add(appointment);

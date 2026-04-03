@@ -54,10 +54,21 @@ namespace BarberShop.Tests
         [Fact]
         public void CreateAppointment_ShouldReturnFalse_WhenBarberIsBusy()
         {
-            var appointmentDate = DateTime.Now.AddDays(1);
+            // 1. Arrange
+            // We create a specific date (Tomorrow at 10:00 AM)
+            var appointmentDate = DateTime.Now.AddDays(1).Date.AddHours(10);
             var barber = "Jack";
 
-            _mockRepo.Setup(r => r.IsSlotTaken(appointmentDate, barber)).Returns(true);
+            var existingAppointment = new Appointment
+            {
+                Id = 1,
+                CustomerName = "Existing Client",
+                BarberName = barber,
+                AppointmentDate = appointmentDate,
+                IsCanceled = false
+            };
+
+            _mockRepo.Setup(r => r.GetAll()).Returns(new List<Appointment> { existingAppointment });
 
             var newAppointment = new Appointment
             {
@@ -66,9 +77,10 @@ namespace BarberShop.Tests
                 AppointmentDate = appointmentDate,
             };
 
-            // Act
+            // 2. Act
             var result = _service.CreateAppointment(newAppointment);
 
+            // 3. Assert
             Assert.False(result);
         }
 
@@ -90,7 +102,6 @@ namespace BarberShop.Tests
         [Fact]
         public void CreateAppointment_ShouldReturnFalse_WhenTimeIsAfterClosing()
         {
-            // Arrange: Create a date for tomorrow at 8 PM (20:00)
             var tomorrow = DateTime.Now.AddDays(1);
             var lateDate = new DateTime(tomorrow.Year, tomorrow.Month, tomorrow.Day, 20, 0, 0);
 
@@ -148,7 +159,7 @@ namespace BarberShop.Tests
         [Fact]
         public void CancelAppointment_ShouldReturnFalse_WhenNoticeIsLessTwoHours()
         {
-            // Arrange: Appointment is 1 hour from now
+            // Arrange:
             var tightSchedule = DateTime.Now.AddHours(1);
             var appointment = new Appointment { Id = 1, AppointmentDate = tightSchedule };
 
@@ -161,64 +172,11 @@ namespace BarberShop.Tests
             Assert.False(result);
         }
 
-        //[Fact]
-        //public void GetAvailableSlots_ShouldNotReturnBookedTime()
-        //{
-        //    // Arrange
-        //    var testDate = DateTime.Now.AddDays(1).Date.AddHours(10); // 10:00 AM tomorrow
-        //    var appointment = new Appointment
-        //    {
-        //        CustomerName = "Test",
-        //        BarberName = "Jack",
-        //        AppointmentDate = testDate,
-        //        IsCanceled = false
-        //    };
-
-        //    // 1. Manually add it to the repository or ensure the service saves it
-        //    _service.CreateAppointment(appointment);
-
-        //    // Act
-        //    var availableSlots = _service.GetAvailableSlots(testDate.Date);
-
-        //    // Assert
-        //    var allAppointments = _repository.GetAll();
-        //    // We expect 10:00 AM to be MISSING from the list
-        //    Assert.DoesNotContain(testDate, availableSlots);
-        //}
-
-        //[Fact]
-        //public void GetAvailableSlots_ShouldNotReturnBookedTime()
-        //{
-
-
-        //    // 1. Arrange
-        //    var testDate = new DateTime(2026, 3, 7, 10, 0, 0); // 10:00 AM
-        //    var appointment = new Appointment
-        //    {
-        //        CustomerName = "Test",
-        //        BarberName = "Jack",
-        //        AppointmentDate = testDate,
-        //        IsCanceled = false
-        //    };
-
-        //    // 2. "Train" the Repository Mock
-        //    // Tell the mock: "When someone calls GetAll(), return a list containing this appointment"
-        //    _mockRepo.Setup(r => r.GetAll())
-        //                               .Returns(new List<Appointment> { appointment });
-
-        //    // 3. Act
-        //    var availableSlots = _service.GetAvailableSlots(testDate.Date);
-
-        //    // 4. Assert
-        //    Assert.DoesNotContain(testDate, availableSlots);
-        //}
-
 
         [Fact]
         public void GetAvailableSlots_ShouldNotReturnBookedTime()
         {
             // 1. Arrange
-            // We create a specific date and time (March 7th, 2026 at 10:00 AM)
             var testDate = new DateTime(2026, 3, 7, 10, 0, 0);
 
             var bookedAppointment = new Appointment
@@ -230,7 +188,6 @@ namespace BarberShop.Tests
                 IsCanceled = false
             };
 
-            // We create a list that represents our "Fake Database"
             var fakeDatabase = new List<Appointment> { bookedAppointment };
 
             // We tell the Mock: "When the Service asks for GetAll(), give it this list"
